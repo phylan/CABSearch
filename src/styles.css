@@ -2,7 +2,7 @@
 body 
 {
 	background-color: #F5F5F5;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 h1, h2, h3, h4
@@ -14,4 +14,10 @@ h1, h2, h3, h4
 {
 	font-family: serif;
 	color: #ae4200;
+}
+
+p
+{
+	padding: 1.2em 0em 0em 1.2em;
+	font-size: 1.2em;
 }
