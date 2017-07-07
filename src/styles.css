@@ -16,8 +16,8 @@ h1, h2, h3, h4
 	color: #ae4200;
 }
 
-p
+.row
 {
-	padding: 1.1em 0em 0em 1.2em;
+	margin: 1.1em 0em 0em 0em;
 	font-size: 1.2em;
 }
