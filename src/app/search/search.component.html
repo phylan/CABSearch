@@ -1,10 +1,10 @@
 <div class="row">
 	<div class="content-row">
 		<div class="col-xs-8">
-			<input name="search" class="form-control input-lg" placeholder="Enter your search terms here"> 
+			<input name="search" type="text" class="form-control input-lg" placeholder="Enter your search terms here" #queryText> 
 		</div>
 		<div class="col-xs-4">
-			<button class="btn btn-lg">Search</button>
+			<button (click)="getQuery(queryText)" type="submit" class="btn btn-lg">Search</button>
 		</div>
 	</div>
 </div>
