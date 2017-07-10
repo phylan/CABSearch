@@ -1,3 +1,6 @@
-<p>
-  decision-detail works!
-</p>
+<div class="bs-callout bs-callout-primary">
+	<h4><a href="{{ decision.source_url }}">{{ decision.school }} | {{ decision.docket }}</a></h4>
+	<p><strong>Date: </strong>{{ decision.date }}</p>
+	<p><strong>District: </strong>{{ decision.district }}</p>
+	<p *ngIf="decision.title"><strong>Title: </strong>{{ decision.title }}</p>
+</div>

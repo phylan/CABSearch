@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Decision } from '../decision';
 
 @Component({
   selector: 'app-decision-detail',
@@ -8,8 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class DecisionDetailComponent implements OnInit {
 
   constructor() { }
-
+ 
   ngOnInit() {
   }
 
+  @Input() decision: Decision;
 }

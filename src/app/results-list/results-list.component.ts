@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Decision } from '../decision';
 
 @Component({
   selector: 'app-results-list',
@@ -12,4 +13,5 @@ export class ResultsListComponent implements OnInit {
   ngOnInit() {
   }
 
+  @Input() results: Decision[];
 }
