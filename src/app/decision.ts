@@ -6,6 +6,6 @@ export class Decision {
 		public school: string,
 		public source_url: string,
 		public title: string,
-		public body: string
+		public excerpts: string
 		){}		
 }

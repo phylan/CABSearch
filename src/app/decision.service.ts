@@ -32,7 +32,7 @@ function toDecision(r:any): Decision {
 		school: r.school,
 		source_url: r.source_url,
 		title: r.title,
-		body: r.body,
+		excerpts: r.excerpts,
 	});
 	return decision;
 }

@@ -1,6 +1,9 @@
 <div class="step show bs-callout bs-callout-primary">
+	<div class="dlbutton"><a href="{{ decision.source_url }}" download><span class="glyphicon glyphicon-download" aria-hidden="true"></span></a></div>
 	<h4><a href="{{ decision.source_url }}" target="_blank">{{ decision.school }} | {{ decision.docket }}</a></h4>
 	<div class="row"><strong>Date: </strong>{{ decision.date }}</div>
 	<div class="row"><strong>District: </strong>{{ decision.district }}</div>
-	<div *ngIf="decision.title"><strong>Title: </strong>{{ decision.title }}</div>
+	<div class="row" *ngIf="decision.title"><strong>Title: </strong>{{ decision.title }}</div>
+	<div class="row"><strong>Excerpts:</strong>
+	<div class="well well-sm" *ngFor="let excerpt of decision.excerpts">{{ excerpt }}</div>
 </div>
