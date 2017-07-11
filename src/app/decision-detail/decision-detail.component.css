@@ -54,3 +54,12 @@
 .bs-callout-info h4 {
     color: #5bc0de;
 }
+
+.show{
+opacity: 1 !important;
+}
+
+.step{
+opacity: 0;
+transition: .5s ease-in-out all;
+}
