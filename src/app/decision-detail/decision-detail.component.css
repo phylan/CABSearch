@@ -1,7 +1,7 @@
 .bs-callout {
     padding: 20px;
-    margin: 20px 0;
-    border: 1px solid #eee;
+    margin: 10px 0;
+    border: 1px solid #787878;
     border-left-width: 5px;
     border-radius: 3px;
 }
@@ -62,4 +62,9 @@ opacity: 1 !important;
 .step{
 opacity: 0;
 transition: .5s ease-in-out all;
+}
+
+.row{
+margin: 0 0 0 0;
+font-size: 1em;
 }
