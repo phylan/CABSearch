@@ -10,7 +10,7 @@ export class DecisionService {
   
   constructor(private http: Http) {}
 
-  private endpoint = 'http://cabdecision-api.herokuapp.com/api/v1.0/search/'
+  private endpoint = 'https://cabdecision-api.herokuapp.com/api/v1.0/search/'
 	
   makeQuery(queryString: string): Observable<Decision[]>{
 	let decisions$ = this.http
