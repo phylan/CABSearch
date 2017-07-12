@@ -19,9 +19,10 @@ export class SearchComponent implements OnInit {
   }
 
   getQuery(queryText: HTMLInputElement): void {
-	console.log(`User entered: ${queryText.value}`);
+	let queryTextEncoded = encodeURIComponent(queryText.value);
+	console.log(`User entered: ${queryTextEncoded}`);
 	this.decisionService
-		.makeQuery(queryText.value)
+		.makeQuery(queryTextEncoded)
 		.subscribe(d => {
 			this.results = d;
 			console.log(this.results);
