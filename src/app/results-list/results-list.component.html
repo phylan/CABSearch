@@ -1,5 +1,5 @@
-<div *ngIf="results?.length">
-	<h3>Showing {{ results.length }} results.</h3>
+<div *ngIf="results?.length > -1">
+	<h3>{{ results.length }} results found.</h3>
 </div>
 <div>
 	<app-decision-detail *ngFor="let decision of results" [decision]=decision></app-decision-detail>
